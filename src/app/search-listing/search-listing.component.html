@@ -1,1 +1,29 @@
-<p>search-listing works!</p>
+<div fullscreen>
+    <h1>Search  Listing</h1>
+  
+      <form [formGroup]="listForm" (ngSubmit)="searchListing()">
+          <label>Listing ID</label>
+          <input matInput formControlName="listingId" required>
+   
+          <br/>
+          <label>Title</label>
+          <input matInput formControlName="listingTitle" required>
+          <br/>
+          <label>Description</label>
+          <textarea matInput formControlName="description" required></textarea>
+          <br/>
+          <label>Street</label>
+          <input matInput formControlName="street" required>
+          <br/>
+          <mat-label>City</mat-label>
+          <input matInput formControlName="city" required>
+          <br/>
+          <mat-label>Postal Code</mat-label>
+          <input matInput formControlName="postalCode" required>
+          <br/>
+          <mat-label>Price</mat-label>
+          <input matInput formControlName="price" required>
+          <br/>
+        <button mat-raised-button color="primary" type="submit">Search Listing</button>
+      </form>
+  </div>

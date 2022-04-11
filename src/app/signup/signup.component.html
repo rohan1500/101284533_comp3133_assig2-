@@ -35,7 +35,21 @@
                 Please enter your firstname
             </div>
         </div>
-
+        <div class="mb">
+            <label for="firstname" class="form-label">lastname</label>
+            <input type="text" class="form-control" id="lasttname" required>
+            <div class="modem" *ngIf="!registerForm.controls['lasttname'].valid">
+                Please enter your lastname
+            </div>
+        </div>
+        <div class="mb">
+            <label for="firstname" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="Emailaddress" required>
+            <div class="modem" *ngIf="!registerForm.controls['Emailaddress'].valid">
+                Please enter your Email address
+            </div>
+            <button class="btn">Signup page</button>
+        </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

@@ -6,9 +6,9 @@ import { AuthService } from 'src/app/network/authentication.service';
 import { GetAdminListing, GetListing } from 'src/app/models';
 
 @Component({
-  selector: 'app-add-listing',
-  templateUrl: './add-listing.component.html',
-  styleUrls: ['./add-listing.component.scss']
+  selector: 'app-create-listing',
+  templateUrl: './create-listing.component.html',
+  styleUrls: ['./create-listing.component.scss']
 })
 export class AddListingComponent implements OnInit {
 

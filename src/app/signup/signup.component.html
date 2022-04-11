@@ -1,0 +1,60 @@
+<div class="container">
+    <form  (ngSubmit)="registerUser($event)"
+          name="registerForm"
+          [formGroup]="registerForm">
+        <legend>Signup</legend>
+        <div class="mb">
+            <label for="username" class="form-label">Username</label>
+            <input   formControlName="username" type="text" class="form-control" 
+            required
+           id="username">
+            <div  *ngIf="!registerForm.controls['username'].valid">
+                
+            </div>
+        </div>
+        <div class="mb-">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required aria-describedby="emailHelp">
+            <div class="modem" *ngIf="!registerForm.controls['email'].valid">
+                Please choose a valid email.
+            </div>
+        </div>
+        <div class="mb">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+            <div class="modem" *ngIf="!registerForm.controls['password'].valid">
+                Please choose a valid password.
+            </div>
+        </div>
+        <div class="mb">
+            <label for="npassword" class="form-label">confirm Password</label>
+            <input type="npassword" class="form-control" id="npassword" required>
+            <div class="modem" *ngIf="!registerForm.controls['npassword'].valid">
+                Please confirm the password.
+            </div>
+        </div>
+        <div class="mb">
+            <label for="firstname" class="form-label">Firstname</label>
+            <input type="text" class="form-control" id="firstname" required>
+            <div class="modem" *ngIf="!registerForm.controls['firstname'].valid">
+                Please enter your firstname
+            </div>
+        </div>
+        <div class="mb">
+            <label for="lastname" class="form-label">Lastname</label>
+            <input type="text" class="form-control" id="lastname" required>
+            <div class="modem" *ngIf="!registerForm.controls['lastname'].valid">
+                Please enter your lastname.
+            </div>
+        </div>
+        <div class="mb">
+            <label for="type" class="form-label">Type</label>
+            <input type="npassword" class="form-control" id="type" required>
+            <div class="modem" *ngIf="!registerForm.controls['type'].valid">
+           type?
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Create Bookings</h3>
+    <ul class="list-group" *ngFor="let booking of bookings">
+        <li class="list-group-item">User:{{booking['user']['username']}}</li>
+        <li class="list-group-item"> Title: {{booking['listing']['listing_title']}}</li>
+        <li class="list-group-item"> City: {{booking['listing']['city']}}</li>
+        
+       <br>
+    
+    </ul>
+</div>
